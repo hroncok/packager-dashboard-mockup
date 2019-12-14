@@ -639,8 +639,8 @@
 
           <div class="card-body">
               <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" name="close_bugs" id="close_bugs" data-singleton="true" checked="">
-                  <label class="custom-control-label" for="close_bugs">
+                  <input type="checkbox" class="custom-control-input" name="show_bugs" id="show_bugs" data-singleton="true" checked="">
+                  <label class="custom-control-label" for="show_bugs">
                       <div class="font-weight-bold">Show bugs?</div>
                       <small>If checked, the dashboard will show all packages with open bugs, according to the more granular settings bellow.</small>
                   </label>
@@ -667,13 +667,34 @@
 
           <div class="card-body pt-0">
               <div class="custom-control custom-switch">
-                  <input type="checkbox" name="require_bugs" id="require_bugs" class="custom-control-input" data-singleton="true" checked="">
+                  <input type="checkbox" name="unspecified_bugs" id="unspecified_bugs" class="custom-control-input" data-singleton="true" checked="">
                   <label class="custom-control-label" for="require_bugs">
                       <div class="font-weight-bold">Show unspecified priority/severity bugs</div>
                       <small>If checked, bugzillas with unspecified priority and unspecified severity will be shown.</small>
                   </label>
               </div>
           </div>
+
+          <div class="card-body pt-0">
+              <div class="custom-control custom-switch">
+                  <input type="checkbox" name="tracking_bugs" id="tracking_bugs" class="custom-control-input" data-singleton="true">
+                  <label class="custom-control-label" for="require_bugs">
+                      <div class="font-weight-bold">Show Tracking bugs</div>
+                      <small>If checked, bugzillas with <em>Tracking</em> keyword will be shown.</small>
+                  </label>
+              </div>
+          </div>
+
+          <div class="card-body pt-0">
+              <div class="custom-control custom-switch">
+                  <input type="checkbox" name="tracking_bugs" id="tracking_bugs" class="custom-control-input" data-singleton="true">
+                  <label class="custom-control-label" for="require_bugs">
+                      <div class="font-weight-bold">Show Future Feature bugs</div>
+                      <small>If checked, bugzillas with <em>FutureFeature</em> keyword will be shown.</small>
+                  </label>
+              </div>
+          </div>
+
       </div>
     </div> <!-- end row -->
 </div>
