@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="management of Fedora Project updates">
+
+    <title>Fedora Packager Dashboard</title>
+
+    
+    <link href="./index_files/fedora-bootstrap.min.css" rel="stylesheet">
+    <link href="./index_files/open-sans.css" rel="stylesheet">
+    <link href="./index_files/hack.css" rel="stylesheet">
+    <link href="./index_files/font-awesome.css" rel="stylesheet">
+    <link href="./index_files/site.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body style="">
+      <div class="searchbar" style="display:none;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <form id="search" role="search">
+                <div id="bloodhound" class="form-group mb-0">
+                  <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="typeahead form-control tt-input" id="searchbox" name="term" autocomplete="off" type="text" placeholder="Search..." spellcheck="false" dir="auto" aria-activedescendant="" aria-owns="searchbox_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list" style="position: relative; vertical-align: top;"><span role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div role="presentation" class="tt-dataset tt-dataset-packages"></div><div role="presentation" class="tt-dataset tt-dataset-updates"></div><div role="presentation" class="tt-dataset tt-dataset-users"></div><div role="presentation" class="tt-dataset tt-dataset-overrides"></div></div></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masthead py-2">
+      <div class="container px-0">
+        <div class="row no-gutters">
+          <div class="col-sm-6">
+            <h1>Fedora Packager Dashboard</h1>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <nav class="navbar navbar-light navbar-expand pt-0 pb-0 ml-auto">
+                  <div class="container">
+                    <ul class="nav navbar-nav nav-pill align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" id="settings-toggle">
+                              <span class="fa fa-cog"></span>
+                            </a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <img src="./index_files/132a6c64fa9fbe9311973f5c5c6a70942b256d23d62be638718fe091076731cf" alt="User Icon">
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">
+                                Dashboard
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                Filter options
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                Log out</a>
+                          </div>
+                        </li>
+
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bodycontent pb-3">
+        
+
+
+
+
+
+
+
+<div class="subheader">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-6">
+                <h5 class="font-weight-bold d-flex align-items-center">python35<!--a class="btn btn-outline-primary btn-sm ml-auto py-0" href="#"><i class="fa fa-plus pr-2"></i>New Update</a--></h5>
+                    <div class="list-group">
+                            
+  <div class="list-group-item p-1">
+      <div class="row align-items-center no-gutters">
+          <div class="col-md">
+              <div class="media">
+                  <span data-toggle="tooltip" title="" data-original-title="This is an enhancement update"><i class="fa fa-fw fa-bolt"></i></span>
+                  <div class="media-body ml-2">
+                      <div class="font-weight-bold">
+                        <a href="https://bodhi.fedoraproject.org/updates/FEDORA-2019-06f91c18c7">
+                        python35-3.5.9-1.fc30
+                        </a>
+                      </div>
+                      <div class="line-height-1">
+                        <small> created
+                          <span title="2019-12-11 18:56:28.816240 UTC"> 2 days</span> ago 
+                          for <a href="https://bodhi.fedoraproject.org/releases/F30">Fedora 30
+                          </a></small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-auto">
+                <div>
+                  <span class="mr-3 font-size-09 p-1 font-weight-normal badge badge-warning">
+  <span class="font-weight-bold">testing</span>
+</span>
+                </div>
+            </div>
+              <div class="col-auto text-muted min-width-3 font-weight-bold mr-3">
+                  <div><i class="fa fa-comment-o pr-1"></i> 0</div>
+              </div>
+            <div class="col-auto min-width-3 font-weight-bold mr-3">
+                <div>
+  
+  
+    <span class="text-muted">
+      <i class="fa fa-thumbs-up text-muted pr-1"></i>
+    0
+  </span>
+</div>
+            </div>
+      </div>
+  </div>
+
+                            
+  <div class="list-group-item p-1">
+      <div class="row align-items-center no-gutters">
+          <div class="col-md">
+              <div class="media">
+                  <span data-toggle="tooltip" title="" data-original-title="This is an enhancement update"><i class="fa fa-fw fa-bolt"></i></span>
+                  <div class="media-body ml-2">
+                      <div class="font-weight-bold">
+                        <a href="https://bodhi.fedoraproject.org/updates/FEDORA-2019-9b8b9c92e7">
+                        python35-3.5.9-1.fc31
+                        </a>
+                      </div>
+                      <div class="line-height-1">
+                        <small> created
+                          <span title="2019-12-11 18:56:27.112456 UTC"> 2 days</span> ago 
+                          for <a href="https://bodhi.fedoraproject.org/releases/F31">Fedora 31
+                          </a></small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-auto">
+                <div>
+                  <span class="mr-3 font-size-09 p-1 font-weight-normal badge badge-warning">
+  <span class="font-weight-bold">testing</span>
+</span>
+                </div>
+            </div>
+              <div class="col-auto text-muted min-width-3 font-weight-bold mr-3">
+                  <div><i class="fa fa-comment-o pr-1"></i> 0</div>
+              </div>
+            <div class="col-auto min-width-3 font-weight-bold mr-3">
+                <div>
+  
+  
+    <span class="text-muted">
+      <i class="fa fa-thumbs-up text-muted pr-1"></i>
+    0
+  </span>
+</div>
+            </div>
+      </div>
+  </div>
+
+                            
+
+                    </div>
+            </div>
+            <div class="col-6">
+                <h5 class="font-weight-bold d-flex align-items-center">python37</h5>
+                    <div class="list-group">
+                            
+
+  <div class="list-group-item p-1">
+      <div class="row align-items-center no-gutters">
+          <div class="col-md">
+              <div class="media">
+                  <span data-toggle="tooltip" title="" data-original-title="This package fails to build"><i class="fa fa-fw fa-wrench"></i></span>
+                  <div class="media-body ml-2">
+                      <div class="font-weight-bold">
+                        <a href="https://koschei.fedoraproject.org/package/python37?collection=f32">
+                        python37-3.7.5-1.fc32 fails to build
+                        </a>
+                      </div>
+                      <div class="line-height-1">
+                        <small> started
+                          <span title="2019-12-01 21:01:42.112456 UTC"> 2 weeks</span> ago 
+                          for <a href="https://koschei.fedoraproject.org/package/python37?collection=f32">Fedora 32
+                          </a></small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-auto">
+                <div>
+                  <span class="mr-3 font-size-09 p-1 font-weight-normal badge badge-danger">
+  <span class="font-weight-bold">FTBFS</span>
+</span>
+                </div>
+            </div>
+              <div class="col-auto text-muted min-width-3 font-weight-bold mr-3">
+                  <div><i class="fa fa-bug"></i> N/A</div>
+              </div>
+      </div>
+  </div>
+
+                            
+
+                    </div>
+            </div>
+
+        </div>
+        <div class="row py-4">
+
+            <div class="col-6">
+                <h5 class="font-weight-bold d-flex align-items-center">python39</h5>
+                    <div class="list-group">
+                            
+  <div class="list-group-item p-1">
+      <div class="row align-items-center no-gutters">
+          <div class="col-md">
+              <div class="media">
+                  <span data-toggle="tooltip" title="" data-original-title="This is an enhancement update"><i class="fa fa-fw fa-bolt"></i></span>
+                  <div class="media-body ml-2">
+                      <div class="font-weight-bold">
+                        <a href="https://bodhi.fedoraproject.org/updates/FEDORA-2019-9b2cdff807">
+                        python39-3.9.0~a1-3.fc30
+                        </a>
+                      </div>
+                      <div class="line-height-1">
+                        <small> created
+                          <span title="2019-12-14 02:09:55.241109 UTC"> 10 hours</span> ago 
+                          for <a href="https://bodhi.fedoraproject.org/releases/F30">Fedora 30
+                          </a></small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-auto">
+                <div>
+                  <span class="mr-3 font-size-09 p-1 font-weight-normal badge badge-info">
+  <span class="font-weight-bold">pending</span>
+</span>
+                </div>
+            </div>
+              <div class="col-auto text-muted min-width-3 font-weight-bold mr-3">
+                  <div><i class="fa fa-comment-o pr-1"></i> 0</div>
+              </div>
+            <div class="col-auto min-width-3 font-weight-bold mr-3">
+                <div>
+  
+  
+    <span class="text-muted">
+      <i class="fa fa-thumbs-up text-muted pr-1"></i>
+    0
+  </span>
+</div>
+            </div>
+      </div>
+  </div>
+
+
+
+                            
+  <div class="list-group-item p-1">
+      <div class="row align-items-center no-gutters">
+          <div class="col-md">
+              <div class="media">
+                  <span data-toggle="tooltip" title="" data-original-title="This is an enhancement update"><i class="fa fa-fw fa-bolt"></i></span>
+                  <div class="media-body ml-2">
+                      <div class="font-weight-bold">
+                        <a href="https://bodhi.fedoraproject.org/updates/FEDORA-2019-f49016e4ce">
+                        python39-3.9.0~a1-3.fc31
+                        </a>
+                      </div>
+                      <div class="line-height-1">
+                        <small> created
+                          <span title="2019-12-06 20:41:53.474030 UTC"> 7 days</span> ago 
+                          for <a href="https://bodhi.fedoraproject.org/releases/F31">Fedora 31
+                          </a></small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-auto">
+                <div>
+                  <span class="mr-3 font-size-09 p-1 font-weight-normal badge badge-warning">
+  <span class="font-weight-bold">testing</span>
+    <span title="" data-toggle="tooltip" data-original-title="this update has been requested to stable"><i class="fa fa-arrow-right text-white"></i> stable</span>
+</span>
+                </div>
+            </div>
+              <div class="col-auto text-muted min-width-3 font-weight-bold mr-3">
+                  <div><i class="fa fa-comment-o pr-1"></i> 0</div>
+              </div>
+            <div class="col-auto min-width-3 font-weight-bold mr-3">
+                <div>
+  
+  
+    <span class="text-muted">
+      <i class="fa fa-thumbs-up text-muted pr-1"></i>
+    0
+  </span>
+</div>
+            </div>
+      </div>
+  </div>
+  <div class="list-group-item p-1">
+      <div class="row align-items-center no-gutters">
+          <div class="col-md">
+              <div class="media">
+                  <span data-toggle="tooltip" title="" data-original-title="This is a buildroot override"><i class="fa fa-car"></i></span>
+                  <div class="media-body ml-2">
+                      <div class="font-weight-bold">
+                        <a href="https://bodhi.fedoraproject.org/overrides/python39-3.9.0~a1-3.fc30">
+                          python39-3.9.0~a1-3.fc30
+                        </a>
+                      </div>
+                      <div class="line-height-1">
+                        <small>created 
+                          <span title="2019-11-28 16:05:00.714433 UTC"> 15 days</span> ago 
+                          for <a href="https://bodhi.fedoraproject.org/releases/F30">Fedora 30
+                          </a></small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xs-auto pr-2 text-muted"><small>expires <strong>in 12 hours</strong></small></div>
+  </div>
+    </div>
+  </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<div class="container py-4">
+  
+  </div>
+
+    </div> <!-- /bodycontent -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer py-5">
+      <div class="container">
+        <p class="text-light text-center">
+          Copyright © 2007-2019 Red Hat, Inc. and
+          <a href="https://github.com/fedora-infra/bodhi/graphs/contributors" class="text-white-50">
+          others</a>.
+        </p>
+        <p class="text-light text-center">
+          Mockup based on
+          <strong>bodhi-5.1.0</strong> on
+          <strong>bodhi-web-147-vxrnv</strong>.
+        </p>
+        <p class="text-light text-center">
+          <a href="https://github.com/fedora-infra/bodhi" class="text-white-50">
+          bodhi</a> is Free Software.
+          Please <a href="https://github.com/fedora-infra/bodhi/issues" class="text-white-50">
+          file issues</a>
+          if you have any problems. Read the <a href="https://bodhi.fedoraproject.org/docs" class="text-white-50">documentation</a>.
+        </p>
+        <p class="text-light text-center">
+            <span>•</span> <a href="https://bodhi.fedoraproject.org/composes/" class="text-white-50">Composes</a>
+            <span>•</span> <a href="https://fedoraproject.org/wiki/Legal:Main" class="text-white-50">Legal</a>
+            <span>•</span> <a href="https://fedoraproject.org/wiki/Legal:PrivacyPolicy" class="text-white-50">Privacy policy</a>
+            <span>•</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog" role="document">
+	<div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="alertModalLabel">Internal Server Error!</h5>
+          </div>
+          <div class="modal-body" id="alertModalDescription">
+	     The server encountered an internal error
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var settings = {
+          bz_products: ["Fedora","Fedora EPEL"],
+          bz_server_rest: "https://bugzilla.redhat.com/rest/"
+      };
+    </script>
+    
+    <script src="./index_files/jquery-1.10.2.min.js"></script>
+    <script>
+      $('#alertModal').on('hidden.bs.modal', function (e) {
+          document.location.href = document.baseURI;
+      })
+    </script>
+    <script src="./index_files/fedora-bootstrap.min.js"></script>
+    <script src="./index_files/site.js"></script>
+    <script src="./index_files/typeahead.bundle.js"></script>
+    <script src="./index_files/search.js"></script>
+    
+    
+  
+
+</body></html>
